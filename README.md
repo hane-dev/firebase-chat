@@ -1,6 +1,6 @@
 # Firebase Example
 
-https://arnosaine.github.io/firebase-example/
+https://hane-dev.github.io/firebase-chat/
 
 ### Development
 
