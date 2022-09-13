@@ -9,6 +9,6 @@ export default function SignInOutButton() {
   return signInCheckResult.signedIn ? (
     <Button variant="contained" onClick={() => signOut(auth)}>Sign out</Button>
   ) : (
-    <button onClick={() => signInWithGoogle(auth)}>Sign in with Google</button>
+    <button className="rounded-full" onClick={() => signInWithGoogle(auth)}>Sign in with Google</button>
   );
 }
