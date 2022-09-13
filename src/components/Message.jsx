@@ -7,7 +7,7 @@ const dateTimeFormat = new Intl.DateTimeFormat("en-GB", {
 
 export default function Message({ createdAt, text, displayName }) {
   return (
-    <div>
+    <div className="bg-slate-100 rounded-xl">
       [
       {createdAt?.seconds ? (
         <span>{dateTimeFormat.format(new Date(createdAt.seconds * 1000))}</span>
@@ -18,7 +18,9 @@ export default function Message({ createdAt, text, displayName }) {
         {displayName ? displayName : null}
         {">"}
       </strong>{" "}
+      <br/>
       {text}
+      <div className="bg-purple-800 align-middle border-blue-500">boop</div>
     </div>
   );
 }
