@@ -12,11 +12,12 @@ export default function Message({ createdAt, text, displayName }) {
     <div>
       <br />
       <Chip
-        label={<Typography style={{ whiteSpace: 'normal' }}>{createdAt?.seconds ? (
-          <span size="small">{dateTimeFormat.format(new Date(createdAt.seconds * 1000))}</span>
-        ) : null}<br/><strong>{displayName}</strong><br />{text}</Typography>}
+        label={<div><Typography style={{ whiteSpace: 'normal' }}><strong>{displayName}</strong><br />{text}</Typography></div>}
         style={{ height: "100%" }}
       />
+      <div className="bg-lime-400 text-cyan-700">
+        <p>{dateTimeFormat.format(new Date(createdAt.seconds * 1000))}</p>
+      </div>
     </div>
   );
 }
