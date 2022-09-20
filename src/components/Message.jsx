@@ -20,7 +20,6 @@ export default function Message({ createdAt, text, displayName }) {
       </strong>{" "}
       <br/>
       {text}
-      <div className="bg-purple-800 align-middle border-blue-500">boop</div>
     </div>
   );
 }
