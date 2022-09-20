@@ -14,7 +14,7 @@ export default function Message({ createdAt, text, displayName }) {
       <Chip
         label={<Typography style={{ whiteSpace: 'normal' }}>{createdAt?.seconds ? (
           <span size="small">{dateTimeFormat.format(new Date(createdAt.seconds * 1000))}</span>
-        ) : null}<br/><strong>{displayName}: </strong><br />{text}</Typography>}
+        ) : null}<br/><strong>{displayName}</strong><br />{text}</Typography>}
         style={{ height: "100%" }}
       />
     </div>
