@@ -12,3 +12,4 @@ export default function SignInOutButton() {
     <button className="rounded-full" onClick={() => signInWithGoogle(auth)}>Sign in with Google</button>
   );
 }
+

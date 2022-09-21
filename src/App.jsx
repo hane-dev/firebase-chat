@@ -1,4 +1,6 @@
+import { ClassNames } from "@emotion/react";
 import { useSigninCheck } from "reactfire";
+import ButtonAppBar from "./components/ButtonAppBar";
 import Channel from "./components/Channel";
 import SignInOutButton from "./components/SignInOutButton";
 
@@ -11,6 +13,7 @@ export default function App() {
 
   return (
     <>
+      <ButtonAppBar></ButtonAppBar>
       <SignInOutButton />
       {signInCheckResult.signedIn && <Channel />}
     </>
